@@ -1,18 +1,21 @@
-# Python3 program to swap first
-# and last element of a list
+def pal(a):
+    mid = (len(a) - 1) // 2
+    start = 0
+    last = len(a) - 1
+    flag = 0
 
-# Swap function
-def swapList(newList):
-    size = len(newList)
+    while (start <= mid):
+        if (a[start] == a[last]):
+            start +=1
+            last -=1
+        else:
+            flag = 1
+            break;
 
-    # Swapping
-    temp = newList[0]
-    newList[0] = newList[size - 1]
-    newList[size - 1] = temp
+    if(flag==0):
+        print("The enterd sting is palindrome")
+    else:
+        print("The entered sting is not palindrome")
 
-    return newList
-
-# Driver code
-newList = [12, 35, 9, 56, 24]
-
-print(swapList(newList))
+string=input("enter your string")
+pal(string)
