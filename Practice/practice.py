@@ -17,5 +17,6 @@ def pal(a):
     else:
         print("The entered sting is not palindrome")
 
+
 string=input("enter your string")
 pal(string)
