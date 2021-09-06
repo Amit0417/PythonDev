@@ -10,11 +10,12 @@ print(out)
 def rev(string_1):
     words = string_1.split(' ')
     rev_string = " ".join(reversed(words))
-    return rev_string
+    stringx = dddrev_string[:-1]+rev_string[:-1].upper()
+    return stringx
 
 
-if __name__ == "__main__":
-    str1 = "geeks quiz practice code"
-    str2 = input("enter your string")
-    print(rev(str1))
-    print(rev(str2))
+# if __name__ == "__main__":
+str1 = "geeks quiz practice code"
+str2 = input("enter your string")
+print(rev(str1))
+print(rev(str2))
